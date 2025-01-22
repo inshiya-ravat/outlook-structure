@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+}
+header {
+    background-color: black;
+    color: white;
+    padding: 5px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+}
+header > div > strong{
+    padding: 10px;
+    font-size: large;
+}
+.search-section{
+    flex: 4;
+    align-content: center;
+    align-items: center;
+    padding-left: 15px;
+}
+.search-section > img{
+    margin-right: 10px;
+    position: inline;
+}
+.search-section > span > img{
+    width: 30px;
+    height: 20px;
+}
+.search-section > span > input{
+    width: 30%;
+    height: 30px;
+}
+.options
+{
+    padding: 10px;
+}
+.options a{
+    margin-right: 10px;
+}
+
