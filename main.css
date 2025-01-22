@@ -12,6 +12,7 @@ header {
 header > div > strong{
     padding: 10px;
     font-size: large;
+    vertical-align: middle;
 }
 .search-section{
     flex: 4;
@@ -21,15 +22,17 @@ header > div > strong{
 }
 .search-section > img{
     margin-right: 10px;
-    position: inline;
+    vertical-align: middle;
 }
 .search-section > span > img{
     width: 30px;
-    height: 20px;
+    height: 30px;
+    vertical-align: middle;
 }
 .search-section > span > input{
     width: 30%;
     height: 30px;
+    border-radius: 5in;
 }
 .options
 {
@@ -38,4 +41,15 @@ header > div > strong{
 .options a{
     margin-right: 10px;
 }
-
+main{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+main > aside{
+    padding: 10px;
+    background-color: #CECECE;
+}
+main > aside > img{
+    margin-bottom: 20px;
+}
