@@ -45,7 +45,7 @@ header > div > strong{
 main{
     display: flex;
     flex-direction: row;
-    padding: 0;
+    padding: 0 10px 0 0;
 }
 main > aside{
     padding: 10px;
@@ -67,4 +67,32 @@ main nav a{
 }
 main nav a:hover{
     border-bottom: 2px solid #0078d4;
+}
+.actions{
+    padding: 10px;
+    border:1px solid #BFBFBF;
+    box-shadow: 5px 5px 5px #aaaaaa;
+    background-color: white;
+    border-radius: 10px;
+}
+.actions label{
+    margin-right: 20px;
+    padding: 7px;
+}
+.actions label:hover{
+    background-color: #F5F5F5;
+    border: 1px solid #F0F0F0;
+    box-shadow: 1px 1px 1px #F5F5F5;
+    border-radius: 3px;
+}
+.actions button{
+    margin-right: 20px;
+    background-color: #0078d4;
+    border: none;
+    color: white;
+    padding: 7px;
+    border-radius: 5px;
+}
+.actions button:hover{
+    background-color: #106EBE;;
 }
