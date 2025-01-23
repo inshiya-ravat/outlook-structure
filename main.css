@@ -30,7 +30,7 @@ header > div > strong{
     vertical-align: middle;
 }
 .search-section > span > input{
-    width: 30%;
+    width: 25%;
     height: 30px;
     border-radius: 5in;
 }
@@ -39,7 +39,8 @@ header > div > strong{
     padding: 10px;
 }
 .options a{
-    margin-right: 10px;
+    margin-right: 30px;
+    vertical-align: middle;
 }
 main{
     display: flex;
@@ -48,8 +49,22 @@ main{
 }
 main > aside{
     padding: 10px;
-    background-color: #CECECE;
+    background-color: #F0F0F0;
 }
 main > aside > img{
     margin-bottom: 20px;
+}
+main > div{
+    flex: 11;
+    background-color: #F5F5F5;
+} 
+main nav{
+    padding: 10px;
+    align-items: start;
+}
+main nav a{
+    margin-right: 20px;
+}
+main nav a:hover{
+    border-bottom: 2px solid #0078d4;
 }
