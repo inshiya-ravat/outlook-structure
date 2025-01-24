@@ -45,7 +45,8 @@ header > div > strong{
 main{
     display: flex;
     flex-direction: row;
-    padding: 0 10px 0 0;
+    padding: 0;
+    height: 100vh;
 }
 main > aside{
     padding: 10px;
@@ -62,18 +63,21 @@ main nav{
     padding: 10px;
     align-items: start;
 }
-main nav a{
+.navbar{
     margin-right: 20px;
 }
-main nav a:hover{
+.navbar:hover{
     border-bottom: 2px solid #0078d4;
 }
 .actions{
-    padding: 10px;
+    padding: 7px;
     border:1px solid #BFBFBF;
     box-shadow: 5px 5px 5px #aaaaaa;
     background-color: white;
     border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    height: 30px;
 }
 .actions label{
     margin-right: 20px;
@@ -90,9 +94,55 @@ main nav a:hover{
     background-color: #0078d4;
     border: none;
     color: white;
+    border-radius: 5px;
     padding: 7px;
+}
+.actions > button:hover{
+    background-color: #106EBE;
+}
+.main{
+    display: flex;
+    padding: 10px;
+}
+.main aside{
+    padding: 10px;
+}
+.main > aside summary{
+    font-weight: bold;
+}
+.main > aside p{
+    flex: 1;
+    padding: 2px 2px 2px 20px;
+    margin: 0;
+    font-weight: lighter;
+}
+.main > aside p:hover{
+    background-color: #E0E0E0;
     border-radius: 5px;
 }
-.actions button:hover{
-    background-color: #106EBE;;
+.main > aside a{
+    color: #0078d4;
+}
+.main-content {
+    display: flex;
+    flex: 10;
+    padding: 10px;
+}
+.main-content aside{
+    flex: 1;
+    padding: 10px;
+    border:1px solid #BFBFBF;
+    box-shadow: 5px 5px 5px #aaaaaa;
+    background-color: white;
+    border-radius: 10px;
+}
+.main-content aside nav{
+    border-bottom: 1px solid #BFBFBF;
+    padding: 2px;
+}
+.main-content aside nav a{
+    margin-right: 10px;
+}
+.main-content aside nav a:hover{
+    border-bottom: 2px solid #0078d4;
 }
