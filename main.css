@@ -128,8 +128,12 @@ main nav{
     flex: 10;
     padding: 10px;
 }
+#focus-email{
+    font-weight: bold;
+    border-bottom: 2px solid #0078d4;
+}
 .main-content aside{
-    flex: 1;
+    flex: 2.2;
     padding: 10px;
     border:1px solid #BFBFBF;
     box-shadow: 5px 5px 5px #aaaaaa;
@@ -138,11 +142,40 @@ main nav{
 }
 .main-content aside nav{
     border-bottom: 1px solid #BFBFBF;
-    padding: 2px;
+    padding: 3px 3px 10px 3px;
 }
 .main-content aside nav a{
     margin-right: 10px;
+    font-size: large;
 }
 .main-content aside nav a:hover{
     border-bottom: 2px solid #0078d4;
+}
+.email-sender {
+    background-color: white;
+    border-left: 4px solid #0078d4;
+    border-bottom: 1px solid #BFBFBF;
+    padding: 7px;
+    display: flex;
+    flex-direction: row;
+}
+.email-sender:hover{
+    border-left: 6px solid #0078d4;
+    background-color: #F5F5F5;
+}
+.email-sender span{
+    padding-left: 10px;
+}
+.email-sender span div{
+    display: flex;
+    flex-direction: row;
+    color: #0078d4;
+}
+.email-sender span div p{
+    flex: 2;
+    margin: 0;
+}
+.email-sender span p{
+    margin: 0;
+    padding-top: 2px;
 }
