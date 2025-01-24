@@ -2,7 +2,7 @@
 This repository contains a basic HTML skeleton code for an Outlook-like interface.
 
 # Preview
-Access the hosted version here: [Live Demo](https://outlook-structure-ndtwzl6ip-inshiya-ravats-projects.vercel.app/)
+Access the hosted version here: [Live Demo](https://outlook-structure-4snnb8szm-inshiya-ravats-projects.vercel.app/)
 
 # Files Included
 - **index.html**: The main HTML structure.
