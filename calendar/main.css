@@ -62,9 +62,6 @@ main > aside{
     margin-bottom: 5px;
     background-color: #F0F0F0;
 }
-main > aside > img{
-    margin-bottom: 20px;
-}
 main > div{
     flex: 11;
     background-color: #F5F5F5;
@@ -122,101 +119,49 @@ main nav{
 .main aside{
     padding: 10px;
 }
-.main > aside summary{
-    font-weight: bold;
-}
-.main > aside details a{
-    flex: 1;
+.main > aside a{
+    display: inline-block;
+    margin-top: 10px;
+    color: #0078d4;
     text-decoration: none;
-    color: black;
-    padding: 2px 2px 2px 20px;
-    margin: 0;
-    font-weight: lighter;
 }
-.main > aside details a:hover{
+.main aside h4{
+    text-align: center;
+    margin: 0;
+}
+.main aside table{
+    font-size: 13px;
+    font-weight: lighter;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid #BFBFBF;
+}
+.main aside table td{
+    padding: 5px;
+}
+#current-row{
+    background-color: #DEECF9;
+}
+.main aside table tr:hover{
     background-color: #E0E0E0;
     border-radius: 5px;
 }
-.main > aside a{
-    color: #0078d4;
+.cal-light{
+    color: grey;
+}
+.main aside details{
+    margin-top: 15px;
+}
+.main aside details summary{
+    font-weight: bold;
+}
+#center-text{
+    text-align: center;
 }
 .main-content {
     display: flex;
     flex: 10;
     padding: 10px;
-}
-#focus-email{
-    font-weight: bold;
-    border-bottom: 2px solid #0078d4;
-}
-.main-content aside{
-    flex: 2.2;
-    padding: 10px;
-    border:1px solid #BFBFBF;
-    box-shadow: 5px 5px 5px #aaaaaa;
-    background-color: white;
-    border-radius: 5px;    
-}
-.main-content aside nav{
-    border-bottom: 1px solid #BFBFBF;
-    padding: 3px 3px 10px 3px;
-}
-.main-content aside nav a{
-    margin-right: 10px;
-    text-decoration: none;
-    color: black;
-    font-size: large;
-}
-.main-content aside nav a:hover{
-    border-bottom: 2px solid #0078d4;
-}
-.main-content aside section{
-    height: 74vh;
-    overflow-y: scroll;
-}
-.email-sender {
-    background-color: white;
-    border-left: 4px solid #0078d4;
-    border-bottom: 1px solid #BFBFBF;
-    padding: 7px;
-    display: flex;
-    flex-direction: row;
-}
-#selected-email{
-    background-color: #DEECF9;
-    border-left: 4px solid #0078d4;
-    border-bottom: 1px solid #BFBFBF;
-    padding: 7px;
-    display: flex;
-    flex-direction: row;
-}
-.email-sender:hover, #selected-email:hover{
-    border-left: 6px solid #0078d4;
-    background-color: #F5F5F5;
-}
-.email-sender span, #selected-email span{
-    padding-left: 10px;
-}
-.email-sender span div, #selected-email span div{
-    display: flex;
-    flex-direction: row;
-    color: #0078d4;
-}
-.email-sender span div p, #selected-email span div p{
-    flex: 2;
-    margin: 0;
-    width: 150px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-.email-sender span p, #selected-email span p{
-    margin: 0;
-    padding-top: 2px;
-    width: 200px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
 .email-content{
     flex: 10;
@@ -231,10 +176,6 @@ main nav{
     margin-bottom: 10px;
     display: flex;
     flex-direction: row;
-}
-#subject{
-    font-weight: bold;
-    font-size: large;
 }
 #profile{
     flex: 0.5;
