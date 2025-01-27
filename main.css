@@ -1,3 +1,6 @@
+::-webkit-scrollbar-track{
+    display: none;
+}
 body{
     margin: 0;
 }
@@ -35,7 +38,7 @@ header > div > strong{
 .search-section > span > input{
     width: 25%;
     height: 30px;
-    border-radius: 5in;
+    border-radius: 5px;
 }
 .search-section > span > input:focus{
     width: 50%;
@@ -52,7 +55,7 @@ main{
     display: flex;
     flex-direction: row;
     padding: 0;
-    height: 100vh;
+    height: calc(100vh - 50px);
 }
 main > aside{
     padding: 10px;
@@ -84,7 +87,7 @@ main nav{
     border:1px solid #BFBFBF;
     box-shadow: 5px 5px 5px #aaaaaa;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 5px;
     display: flex;
     flex-direction: row;
     height: 30px;
@@ -99,7 +102,7 @@ main nav{
     background-color: #F5F5F5;
     border: 1px solid #F0F0F0;
     box-shadow: 1px 1px 1px #F5F5F5;
-    border-radius: 3px;
+    border-radius: 5px;
 }
 .actions button{
     margin-right: 20px;
@@ -152,7 +155,7 @@ main nav{
     border:1px solid #BFBFBF;
     box-shadow: 5px 5px 5px #aaaaaa;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 5px;    
 }
 .main-content aside nav{
     border-bottom: 1px solid #BFBFBF;
@@ -166,6 +169,10 @@ main nav{
 }
 .main-content aside nav a:hover{
     border-bottom: 2px solid #0078d4;
+}
+.main-content aside section{
+    height: 74vh;
+    overflow-y: scroll;
 }
 .email-sender {
     background-color: white;
@@ -220,7 +227,7 @@ main nav{
     border:1px solid #BFBFBF;
     box-shadow: 5px 5px 5px #aaaaaa;
     background-color: white;
-    border-radius: 10px;    
+    border-radius: 5px;    
     margin-bottom: 10px;
     display: flex;
     flex-direction: row;
