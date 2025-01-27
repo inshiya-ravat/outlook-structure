@@ -155,64 +155,61 @@ main nav{
 .main aside details summary{
     font-weight: bold;
 }
-#center-text{
-    text-align: center;
-}
 .main-content {
     display: flex;
     flex: 10;
     padding: 10px;
 }
-.email-content{
+.cal-content{
     flex: 10;
-    padding-left: 20px;
-}
-.email-content article{
     padding: 10px;
     border:1px solid #BFBFBF;
     box-shadow: 5px 5px 5px #aaaaaa;
     background-color: white;
     border-radius: 5px;    
     margin-bottom: 10px;
+    padding-left: 20px;
+}
+#date{
     display: flex;
     flex-direction: row;
+    flex: 1;
 }
-#profile{
-    flex: 0.5;
-}
-#details{
-    flex: 11.5;
-}
-#details section{
-    display: flex;
-    flex-direction: row;
-}
-#details section p{
-    flex: 30;
-    padding: 5px;
-    margin: 0;
-}
-#details section div svg{
-    vertical-align: middle;
-}
-#details section div button{
-    border: none;
+#btn-today{
+    flex: 1;
+    height: 30px;
     background-color: white;
-    margin-left: 10px;
-    padding: 5px;
-}
-#details section div button:hover, #reply button:hover{
-    background-color: #DEECF9;
-    border-radius: 5px;
-}
-#details p a{
-    color: #106EBE;
-    text-decoration: underline;
-    cursor: default;
-}
-#reply button{
     border: 2px solid #F0F0F0;
+    margin: 10px;
+    color: #424242;
+    font-weight: bold;
+}
+#btn-date{
+    flex: 12;
+    margin: 0;
+    padding: 10px;
+    color: #424242;
     background-color: white;
-    padding: 5px;
+    border: none;
+    font-size: large;
+    font-weight: bold;
+}
+.cal-content table tr td{
+    border: 1px solid #BFBFBF;
+}
+.cal-header{
+    color: #0078d4;
+    border: 1px solid #BFBFBF;
+}
+.cal-header p{
+    margin: 0;
+    padding: 0;
+}
+.cal-header h3{
+    margin: 0;
+    padding: 0;
+}
+.cal-event td{
+    background-color: #DEECF9;
     border-radius: 5px;
 }
