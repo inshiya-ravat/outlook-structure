@@ -184,6 +184,9 @@ main nav{
     color: #424242;
     font-weight: bold;
 }
+#btn-today:hover{
+    background-color: #F0F0F0;
+}
 #btn-date{
     flex: 12;
     margin: 0;
@@ -212,4 +215,8 @@ main nav{
 .cal-event td{
     background-color: #DEECF9;
     border-radius: 5px;
+}
+.cal-event td a{
+    text-decoration: none;
+    color: #424242;
 }
