@@ -1,0 +1,174 @@
+body::-webkit-scrollbar{
+    display: none;
+}
+body{
+    margin: 0;
+}
+/* header  */
+header {
+    background-color: black;
+    color: white;
+    padding: 5px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+}
+header > div > strong{
+    padding: 10px;
+    font-size: large;
+    vertical-align: middle;
+}
+.search-section{
+    flex: 4;
+    align-content: center;
+    align-items: center;
+    padding-left: 15px;
+}
+.search-section button{
+    background-color: inherit;
+    border: none;
+    vertical-align: middle;
+}
+.search-section > a > img{
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.search-section > span > svg{
+    vertical-align: middle;
+}
+.search-section > span > input{
+    width: 25%;
+    height: 30px;
+    border-radius: 5px;
+}
+.search-section > span > input:focus{
+    width: 50%;
+}
+.options
+{
+    padding: 10px;
+}
+.options a{
+    margin-right: 30px;
+    vertical-align: middle;
+}
+/* main container */
+main{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    height: calc(100vh - 50px);
+    background-color: #F5F5F5;
+}
+main > aside{
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #F0F0F0;
+}
+main > section{
+    display: flex;
+    flex-direction: row;
+}
+main > section > aside{
+    background-color: white;
+    padding: 20px;
+    margin: 0;
+    height: calc(100vh - 100px);
+}
+.main-section-left-panel{
+    display: inline-block;
+}
+.main-section-left-panel > button{
+    background-color: inherit;
+    border: none;
+}
+#settings{
+    margin-left: calc(250px - 80px);
+}
+#aside-first-section{
+    border-bottom: 1px solid #BFBFBF;
+}
+.main-section-left-options{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    background-color: inherit;
+    border: none;
+    width: 100%;
+}
+.main-section-left-options svg{
+    padding: 5px 5px 5px 0px;
+    vertical-align: middle;
+}
+.main-section-left-options p{
+    margin: 0;
+    padding: 7px;
+    vertical-align: middle;
+}
+#aside-second-section{
+    padding: 10px;
+}
+#aside-second-section div{
+    display: flex;
+    flex-direction: row;
+}
+#aside-second-section button{
+    background-color: inherit;
+    border: none;
+}
+#btn-new-list{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+#btn-new-list input{
+    padding: 1px;
+    background-color: inherit;
+    border: none;
+}
+#btn-new-list input::placeholder{
+    color: #0078d4;
+    font-size: medium;
+    padding: 3px;
+    vertical-align: middle;
+}
+#aside-second-section button:hover, #aside-first-section button:hover{
+    background-color: #F5F5F5;
+}
+#current-option{
+    background-color: #DEECF9;
+    border-left: 2px solid #0078d4;
+}
+.task-section{
+    flex: 1;
+}
+.task-section div{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    width: 100%;
+    justify-content: space-between;
+}
+.task-section h2{
+    margin-left: 10px;
+}
+.task-section button{
+    background-color: inherit;
+    border: none;
+}
+.section-first-left > button p, .section-first-right > button p{
+    margin-top: 5px;
+    color: #0078d4;
+    font-weight: bold;
+}
+#section-second{
+    background-color: white;
+    margin-left: 20px;
+}
+#section-second input{
+    border: none;
+}
+#section-second input::placeholder{
+    color: #0078d4;
+    font-size: medium;
+}
