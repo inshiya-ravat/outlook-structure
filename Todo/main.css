@@ -68,16 +68,15 @@ main > aside{
 main > section{
     display: flex;
     flex-direction: row;
+    flex: 0.95;
 }
 main > section > aside{
     background-color: white;
     padding: 20px;
     margin: 0;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 100px)
 }
-.main-section-left-panel{
-    display: inline-block;
-}
+/* side panel  */
 .main-section-left-panel > button{
     background-color: inherit;
     border: none;
@@ -139,6 +138,7 @@ main > section > aside{
     background-color: #DEECF9;
     border-left: 2px solid #0078d4;
 }
+/* task section  */
 .task-section{
     flex: 1;
 }
