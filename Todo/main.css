@@ -58,7 +58,7 @@ main{
     flex-direction: row;
     padding: 0;
     height: calc(100vh - 50px);
-    background-color: #F5F5F5;
+    background-color: #faf9f8;
 }
 main > aside{
     padding: 10px;
@@ -146,15 +146,18 @@ main > section > aside{
     display: flex;
     flex-direction: row;
     padding: 10px;
-    width: 100%;
     justify-content: space-between;
 }
 .task-section h2{
     margin-left: 10px;
 }
-.task-section button{
+.section-first-left button{
     background-color: inherit;
     border: none;
+    width: 80px;
+}
+.section-first-left button:hover{
+    background-color: #f5f5f5;
 }
 .section-first-left > button p, .section-first-right > button p{
     margin-top: 5px;
@@ -164,6 +167,8 @@ main > section > aside{
 #section-second{
     background-color: white;
     margin-left: 20px;
+    box-shadow: 2px 2px 2px 1px #cccccc;
+    border-radius: 5px 5px 0px 0px;
 }
 #section-second input{
     border: none;
@@ -171,4 +176,51 @@ main > section > aside{
 #section-second input::placeholder{
     color: #0078d4;
     font-size: medium;
+}
+.section-first-right button{
+    width: 90px;
+}
+.section-first-right button:hover{
+    background-color: #f5f5f5;
+}
+#tasks{
+    color: #0078d4;
+}
+.add-task-focus{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #f5f5f5;
+    margin-left: 20px;
+    box-shadow: 2px 2px 2px 1px #cccccc;
+    border-radius: 0px 0px 5px 5px;
+}
+.add-task-focus div{
+    width: 15px;
+    gap: 16px;
+}
+.add-task-focus div button{
+    background-color: inherit;
+    border: none;
+}
+.add-task-focus button:hover{
+    background-color: #F5F5F5;
+}
+.task-list{
+    display: flex;
+    flex-direction: column !important;
+    margin-left: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 1px #cccccc;
+    margin-top: 10px;
+}
+.task-list table tr td{
+    border-bottom: 1px solid #e1dfdd;
+    padding: 5px;
+}
+#completed{
+    border-bottom: 0px;
+    padding: 10px;
+    font-weight: bold;
 }
