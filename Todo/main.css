@@ -61,12 +61,14 @@ main{
     height: calc(100vh - 50px);
     background-color: #faf9f8;
     min-width: 970px;
-    min-height: 1000px;
+    min-height: 700px;
 }
 main > aside{
     padding: 10px;
     margin-bottom: 5px;
     background-color: #F0F0F0;
+    display: flex;
+    flex-direction: column;
 }
 main > section{
     display: flex;
@@ -77,7 +79,7 @@ main > section > aside{
     background-color: white;
     padding: 20px;
     margin: 0;
-    min-height: 1000px;
+    min-height: 700px;
     height: calc(100vh - 100px)
 }
 /* side panel  */
@@ -162,6 +164,7 @@ main > section > aside{
 }
 .section-first-left button:hover{
     background-color: #f5f5f5;
+    border-bottom: 2px solid #0078d4;
 }
 .section-first-left > button p, .section-first-right > button p{
     margin-top: 5px;
@@ -186,6 +189,7 @@ main > section > aside{
 }
 .section-first-right button:hover{
     background-color: #f5f5f5;
+    border-bottom: 2px solid #0078d4;
 }
 #tasks{
     color: #0078d4;
@@ -220,15 +224,26 @@ main > section > aside{
     margin-top: 10px;
 }
 .task-list table tr td{
-    border-bottom: 1px solid #e1dfdd;
+    border-bottom: 1px solid #e1dfdd !important;
     padding: 5px;
+    border: 1px solid transparent;
+}
+td button{
+    background-color: inherit;
+    border: none;
+}
+.task-list table tr td:hover{
+    border: 1px solid #BFBFBF;
 }
 #completed{
     border-bottom: 0px;
     padding: 10px;
     font-weight: bold;
 }
-
+ul{
+    list-style: none;
+    padding: 0;
+}
 /* responsive  */
 
 #r-options-menu{
