@@ -1,8 +1,12 @@
+*{
+    box-sizing: border-box;
+}
 body::-webkit-scrollbar{
     display: none;
 }
 body{
     margin: 0;
+    background-color: #faf9f8;
 }
 /* header  */
 header {
@@ -61,7 +65,7 @@ main{
     height: calc(100vh - 50px);
     background-color: #faf9f8;
     min-width: 970px;
-    min-height: 700px;
+    /* min-height: 700px; */
 }
 main > aside{
     padding: 10px;
@@ -79,7 +83,7 @@ main > section > aside{
     background-color: white;
     padding: 20px;
     margin: 0;
-    min-height: 700px;
+    /* min-height: 700px; */
     height: calc(100vh - 100px)
 }
 /* side panel  */
@@ -261,5 +265,30 @@ ul{
     }
     .actions{
         height: 40px;
+    }
+    main section aside:not(#menu){
+        display: none;
+    }
+    .task-list table{
+        font-size: large;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    main aside a{
+        margin-bottom: 20px;
+    }
+    main aside a svg{
+        width: 90px;
+        height: 90px;
+    }
+    .task-list table td label, .task-list table td{
+        font-size: xx-large;
+    }
+    #section-second input::placeholder{
+        font-size: large;
+    }
+    main > section{
+        overflow-x: scroll;      
     }
 }
