@@ -16,7 +16,7 @@ header {
     justify-content: space-between;
     display: flex;
     flex-direction: row;
-    min-width: 960px;
+    min-width: 980px;
 }
 header > div > strong{
     padding: 10px;
@@ -83,8 +83,6 @@ main > section > aside{
     background-color: white;
     padding: 20px;
     margin: 0;
-    /* min-height: 700px; */
-    height: calc(100vh - 100px)
 }
 /* side panel  */
 .main-section-left-panel > button{
@@ -97,22 +95,24 @@ main > section > aside{
 #aside-first-section{
     border-bottom: 1px solid #BFBFBF;
 }
+#aside-first-section li{
+    width: 100%;
+}
 .main-section-left-options{
     display: flex;
     flex-direction: row;
-    padding: 10px;
+    padding: 10px 5px 5px 5px;
     background-color: inherit;
     border: none;
-    width: 100%;
+    /* width: 100%; */
 }
 .main-section-left-options svg{
-    padding: 5px 5px 5px 0px;
-    vertical-align: middle;
+    padding: 10px 5px 5px 0px;
 }
 .main-section-left-options p{
     margin: 0;
-    padding: 7px;
-    vertical-align: middle;
+    padding: 9px;
+    font-size: medium;
 }
 #aside-second-section{
     padding: 10px;
@@ -141,16 +141,21 @@ main > section > aside{
     padding: 3px;
     vertical-align: middle;
 }
-#aside-second-section button:hover, #aside-first-section button:hover{
+#aside-second-section button:hover, #aside-first-section li:hover{
     background-color: #F5F5F5;
 }
 #current-option{
     background-color: #DEECF9;
     border-left: 2px solid #0078d4;
+    width: 100%;
 }
 /* task section  */
 .task-section{
     flex: 1;
+    overflow-y: scroll;
+}
+.task-section::-webkit-scrollbar{
+    display: none;
 }
 .task-section div{
     display: flex;
@@ -183,6 +188,10 @@ main > section > aside{
 }
 #section-second input{
     border: none;
+    width: 100%;
+}
+#section-second input:focus{
+    outline-color: #0078d4;
 }
 #section-second input::placeholder{
     color: #0078d4;
@@ -275,20 +284,16 @@ ul{
 }
 
 @media screen and (max-width: 400px) {
+    body{
+        font-size: x-large !important;
+    }
     main aside a{
         margin-bottom: 20px;
     }
-    main aside a svg{
-        width: 90px;
-        height: 90px;
+    .task-section{
+        min-height: 100vh;
     }
-    .task-list table td label, .task-list table td{
-        font-size: xx-large;
-    }
-    #section-second input::placeholder{
-        font-size: large;
-    }
-    main > section{
-        overflow-x: scroll;      
+    .main-section-left-options p{
+        font-size: x-large;
     }
 }
