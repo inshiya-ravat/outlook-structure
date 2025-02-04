@@ -65,7 +65,11 @@ main > aside{
     padding: 10px;
     margin-bottom: 5px;
     background-color: #F0F0F0;
-    /* min-height: 900px; */
+    display: flex;
+    flex-direction: column;
+}
+main > aside > a{
+    padding: 2px 10px 2px 10px;
 }
 main > div{
     flex: 11;
@@ -87,7 +91,7 @@ main nav{
     padding: 7px;
     margin-right: 20px;
     border:1px solid #BFBFBF;
-    box-shadow: 5px 5px 5px #aaaaaa;
+    box-shadow: 2px 2px 2px 1px #cccccc;
     background-color: white;
     border-radius: 5px;
     display: flex;
@@ -103,7 +107,7 @@ main nav{
 .actions a:hover{
     background-color: #F5F5F5;
     border: 1px solid #F0F0F0;
-    box-shadow: 1px 1px 1px #F5F5F5;
+    box-shadow: 2px 2px 2px 1px #cccccc;
     border-radius: 5px;
 }
 .actions button{
@@ -129,6 +133,26 @@ main nav{
     margin-top: 10px;
     color: #0078d4;
     text-decoration: none;
+    font-size: small;
+}
+.main > aside button:hover{
+    background-color: #E0E0E0;
+}
+.main aside button{
+    border: none;
+    background-color: inherit;
+}
+.main aside details{
+    padding: 0px 10px 0px 10px;
+}
+.main aside details:hover, #selected:hover{
+    background-color: #E0E0E0;
+}
+#selected{
+    margin: auto;
+    padding-left: 28px;
+    width: 100%;
+    font-size: medium;
 }
 .main aside h4{
     text-align: center;
@@ -164,12 +188,17 @@ main nav{
     display: flex;
     flex: 10;
     padding: 10px; 
+    max-height: 100vh;
+    overflow-y: scroll;
+}
+.main-content table{
+    overflow-y: scroll;
 }
 .cal-content{
     flex: 10;
     padding: 10px;
     border:1px solid #BFBFBF;
-    box-shadow: 5px 5px 5px #aaaaaa;
+    box-shadow: 2px 2px 2px 1px #cccccc;
     background-color: white;
     border-radius: 5px;    
     margin-bottom: 10px;
@@ -221,8 +250,10 @@ main nav{
     background-color: #DEECF9;
     border-radius: 5px;
 }
-.cal-event td a{
-    text-decoration: none;
+.cal-event td button{
+    background-color: inherit;
+    border: none;
+    border-left:4px solid #0078d4;
     color: #424242;
 }
 
@@ -230,9 +261,7 @@ main nav{
 #r-options-menu{
     display: none;
 }
-.r-svg{
-    display: none;    
-}
+
 
 /* responsive */
 
@@ -241,7 +270,7 @@ main nav{
         overflow-y: scroll;
     }
     header{
-        min-width: 750px;
+        min-width: 500px;
     }
 }
 
@@ -250,6 +279,9 @@ main nav{
         display: inline;
         background-color: inherit;
         border: none;
+    }
+    header{
+        min-width: 620px;
     }
     .options a{
         display: none;
@@ -264,15 +296,16 @@ main nav{
     main > div table{
         overflow-y: scroll;
     }
+    .r-svg{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 950px) {
-    .r-svg{
-        display: block;
-        background-color: inherit;
-        border: none;
-    }
     .main aside table{
+        display: none;
+    }
+    .r-svg{
         display: none;
     }
     .main aside a:not(.r-svg), .main aside details, #cal{
